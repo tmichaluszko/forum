@@ -1,0 +1,25 @@
+<template name="single_article">
+    <div class="avatar">
+        <img src="https://randomuser.me/api/portraits/lego/7.jpg" class="image img-fluid rounded float-left">
+    </div>
+    <div class="message">
+        <div class="js-edit-message">
+            <div class="body">
+                <p stle="white-space: pre">{{article.msg}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="info">
+        <div class="metadata">
+            <div class="date">
+                {{fromNow article.createdAt}}
+            </div>
+            <div class="id">
+                {{#if article.ownerId}}
+                {{getUserPseudo article.ownerId}}
+                {{else}}
+                {{/if}}
+            </div>
+        </div>
+    </div>
+</template>

@@ -1,0 +1,16 @@
+<template name="accueil">
+    <div class="row justify-content-between">
+        <div class="col-md-3 listuser">
+            {{> list_users}}
+        </div>
+        <div class="col-md-9 message">
+            {{> list_article article = article}}
+
+            {{> form_new_article}}
+        </div>
+
+    </div>
+
+
+
+</template>

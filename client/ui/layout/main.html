@@ -1,0 +1,17 @@
+<template name="main">
+    {{> nav}}
+    <div class="wrapper mx-auto bg-white">
+        <h1 class="text-center">Bienvenue sur Forum</h1>
+        {{#if currentUser}}
+        {{#if currentUser.profile.pseudo}}
+        {{> accueil}}
+        {{else}}
+        {{>setPseudo}}
+        {{/if}}
+        {{else}}
+        {{> atForm}}
+        {{/if}}
+        <!--{{> yield}}-->
+    </div>
+
+</template>
