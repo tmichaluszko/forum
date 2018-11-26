@@ -1,6 +1,6 @@
-/*Template.accueil.helpers({
-    messages() {
+Template.accueil.helpers({
+    articles() {
 
-        return Messages.find({}).fetch()
+        return Articles.find({}).fetch()
     }
-})*/
+})

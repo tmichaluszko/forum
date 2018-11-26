@@ -1,16 +1,9 @@
 <template name="accueil">
-    <div class="row justify-content-between">
-        <div class="col-md-3 listuser">
-            {{> list_users}}
-        </div>
+    <div class="row justify-content-center">
         <div class="col-md-9 message">
-            {{> list_article article = article}}
-
-            {{> form_new_article}}
+            {{> list_article articles = articles}}
         </div>
 
     </div>
-
-
 
 </template>

@@ -1,8 +1,8 @@
 <template name="main">
     {{> nav}}
-    <div class="wrapper mx-auto bg-white">
-        <h1 class="text-center">Bienvenue sur Forum</h1>
-        <!--{{#if currentUser}}
+    <div class="container h-100">
+        <div class="wrapper mx-auto bg-white">
+            <!--{{#if currentUser}}
         {{#if currentUser.profile.pseudo}}
         {{> accueil}}
         {{else}}
@@ -11,7 +11,7 @@
         {{else}}
         {{> atForm}}
         {{/if}}-->
-        {{> yield}}
+            {{> yield}}
+        </div>
     </div>
-
 </template>
