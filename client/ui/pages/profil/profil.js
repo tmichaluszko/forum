@@ -24,7 +24,7 @@ Template.profil.events({
 Template.profil.helpers({
     user() {
         return Meteor.users.find({
-            _id: Meteor.userId
+            _id: Meteor.userId()
         }).fetch()
     }
-});
+})
