@@ -12,6 +12,7 @@ Template.form_new_article.events({
             }),
 
             event.target.msg.value = '';
+
     }
 })
 

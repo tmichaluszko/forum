@@ -1,6 +1,6 @@
-/*Template.list_users.onCreated(function() {
-    this.subscribe("listUser");
-  });*/
+Template.list_users.onCreated(function () {
+    this.subscribe("listMembres");
+})
 
 Template.list_users.helpers({
     users() {

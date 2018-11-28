@@ -22,9 +22,9 @@ Template.profil.events({
 })
 
 Template.profil.helpers({
-    user() {
-        return Meteor.users.find({
+    pseudo() {
+        return Meteor.users.findOne({
             _id: Meteor.userId()
-        }).fetch()
+        }).profile.pseudo
     }
 })
