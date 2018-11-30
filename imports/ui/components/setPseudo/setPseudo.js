@@ -1,3 +1,4 @@
+import "setPseudo.html"
 Template.setPseudo.events({
     "submit .js-new-pseudo"(event, instance) {
         event.preventDefault();
