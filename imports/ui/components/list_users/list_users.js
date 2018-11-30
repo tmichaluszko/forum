@@ -1,3 +1,4 @@
+import "list_users.html"
 Template.list_users.onCreated(function () {
     this.subscribe("listMembres");
 })
