@@ -1,3 +1,3 @@
 Meteor.publish("listArt", function () {
-  return Articles.find({})
+  return Articles.find()
 })
