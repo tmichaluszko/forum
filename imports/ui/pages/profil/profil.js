@@ -1,3 +1,4 @@
+import Alerts from "/lib/alerts.js";
 import "./profil.html"
 Template.profil.events({
     "submit .js-change-pseudo"(event, instance) {
@@ -10,7 +11,7 @@ Template.profil.events({
                 "profile.pseudo": pseudo
             }
         });
-        window.alert("Votre pseudo à bien été modifié")
+        Alerts.success("Votre pseudo a bien été modifié");
     }
 })
 
