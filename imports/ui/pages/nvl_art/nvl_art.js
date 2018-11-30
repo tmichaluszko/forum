@@ -1,1 +1,1 @@
-import "nvl_art.html"
+import "./nvl_art.html"

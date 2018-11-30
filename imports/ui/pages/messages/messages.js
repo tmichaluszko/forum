@@ -1,1 +1,1 @@
-import "messages.html"
+import "./messages.html"

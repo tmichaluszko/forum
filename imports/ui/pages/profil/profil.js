@@ -1,4 +1,4 @@
-import "profil.html"
+import "./profil.html"
 Template.profil.events({
     "submit .js-change-pseudo"(event, instance) {
         event.preventDefault();
