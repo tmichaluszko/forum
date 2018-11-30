@@ -1,3 +1,5 @@
+import Alerts from "/lib/alerts.js";
+
 Template.form_new_article.events({
     "submit .js-new-article"(event, instance) {
         event.preventDefault();
@@ -21,6 +23,6 @@ Template.form_new_article.events({
         event.preventDefault()
 
         Router.go("/")
-        window.alert("Votre message a bien été posté")
+        Alerts.success("Le message à bien été envoyé");
     }
 })
