@@ -1,0 +1,17 @@
+<template name="list_users">
+    <div class="list_user text-center">
+        <h2>Liste des membres</h2>
+        {{#each user in users}}
+        <div class="d-flex flex-row text-center user">
+            <ul>
+                <li>
+                    <a class="" href="#">{{
+                        user.profile.pseudo
+                        }}</a>
+                </li>
+            </ul>
+        </div>
+        {{/each}}
+    </div>
+
+</template>

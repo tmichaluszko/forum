@@ -1,0 +1,1 @@
+Discutions = new Mongo.Collection("discutions")
