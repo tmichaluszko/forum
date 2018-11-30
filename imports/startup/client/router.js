@@ -4,7 +4,7 @@ Router.configure({
 
 //action faite avant l'accès au router
 Router.onBeforeAction(function() {
-    if (!Meteor.userId()) {
+    if (!Meteor.user()) {
         this.render("atForm")
     } else if (!Meteor.user().profile.pseudo) {
         this.render("setPseudo")
