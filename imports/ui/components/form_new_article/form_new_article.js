@@ -1,4 +1,6 @@
+import "./form_new_article.html"
 import Alerts from "/lib/alerts.js";
+
 
 Template.form_new_article.events({
     "submit .js-new-article"(event, instance) {
