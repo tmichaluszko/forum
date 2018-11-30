@@ -4,14 +4,12 @@ Router.configure({
 
 //action faite avant l'accès au router
 Router.onBeforeAction(function() {
-    if (Meteor.userId()) {
-        if (Meteor.user().profile.pseudo) {
-          
-        } else {
-          this.redirect("/register");
-        }
-      } else {
-
+    if (!Meteor.userId()) {
+        this.render("atForm")
+    } else if (!Meteor.user().profile.pseudo) {
+        this.render("setPseudo")
+    } else {
+        this.next()
       }
     
   });
