@@ -2,11 +2,7 @@ import "./form_new_article.html"
 import Alerts from "/lib/alerts.js";
 import { Articles } from "/imports/api/articles/articles.js"
 
-console.log(Articles)
 
-Template.form_new_article.onCreated(function () {
-    this.subscribe("listArt")
-})
 
 Template.form_new_article.events({
     "submit .js-new-article"(event, instance) {

@@ -11,14 +11,7 @@ Template.profil.events({
             }
         });
         window.alert("Votre pseudo à bien été modifié")
-    }
-})
-
-Template.profil.events({
-    "submit .js-change-pseudo"(event, instance) {
-        event.preventDefault()
         Router.go("/")
-
     }
 })
 

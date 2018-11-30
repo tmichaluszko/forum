@@ -87,13 +87,7 @@ Router.route("/membres", function () {
 });
 
 Router.route("/profil", function () {
-    if (Meteor.user()) {
-        if (Meteor.user().profile.pseudo) {
-            this.render("profil");
-        }
-    } else {
-        this.render("atForm");
-    }
+    this.render("profil");
 });
 
 Router.route("/discution", function () {
